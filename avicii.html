@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Francesco</title>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="icon" href="http://avicii.com/wp-content/themes/aviciiboard/assets/img/logo.svg"></link>
+		</head>
+	<body style="background-color: #333333">
+		<div class="centerbox" style="min-height: 100%">
+		<h1 class="maName white">◢◤ In Memory of Tim Bergling ◢◤</h1>
+		<h3 id="phrase" class="grey">Tim Berling, aka 'Avicii', made his last breath in 20th April 2018, but still now, in %year%, remains my favourite artist, thanks <3</h3>
+		<a href="stories.png"><img src="stories.png" style="width: auto; height: 360px; margin: 13px"/></a>
+		<h3 class="grey">For those interested (probably none), here it is a wallpaper I made some time ago, it's just "Stories"'s Album Art readapted in 16:9 and in 6K (PNG, ~16MB), feel free to download it :)</h3>
+			<a href="https://22cms.github.io" style="text-decoration:none"><div class="rowbox">
+				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="478" height="478" viewBox="0 0 210 297" version="1.1" id="francesco"><defs id="defs2"><linearGradient gradientTransform="matrix(2.35168 0 0 2.34665 -44.33 -.202)" xlink:href="#linearGradient1081" id="linearGradient1083" x1="44.434" y1="87.37" x2="44.527" y2="60.617" gradientUnits="userSpaceOnUse"/><linearGradient id="linearGradient1081"><stop style="stop-color:#fff;stop-opacity:1" offset="0" id="stop1077"/><stop style="stop-color: #fff; stop-opacity:0" offset="1" id="stop1079"/></linearGradient><linearGradient id="linearGradientyellow"><stop style="stop-color:var(--second-color);stop-opacity:1" offset="0" id="stop1077"/><stop style="stop-color: var(--second-color);stop-opacity:0" offset="1" id="stop1079"/></linearGradient><linearGradient y2="60.617" x2="44.527" y1="87.37" x1="44.434" gradientTransform="matrix(2.35168 0 0 2.34665 252.522 -.202)" gradientUnits="userSpaceOnUse" id="linearGradient882" xlink:href="#linearGradient1081"/><linearGradient y2="60.617" x2="44.527" y1="87.37" x1="44.434" gradientTransform="matrix(2.35168 0 0 2.34665 252.522 -.202)" gradientUnits="userSpaceOnUse" id="linearGradient882Y" xlink:href="#linearGradientyellow"/></defs><g id="layer1"><circle r="144.976" class="border" id="border" cx="105" cy="148.5"/><path d="M45.814 100.517s23.855-22.282 59.005-22.61c33.777-.316 60.968 22.824 60.968 22.824" class="mounth" id="mounth"/><ellipse class="eye" id="eye1" cx="60.745" cy="179.362" rx="16.42" ry="26.281"/><ellipse class="eye" ry="26.281" rx="16.42" cy="179.361" cx="148.426" id="eye2"/></g></svg>
+				<h1 class="maName white">Francesco</h1>
+			</div></a>
+		</div>
+	</body>
+	<style>
+			h6, h5, h4, h3, h2, h1, p {
+				font-family: 'Open Sans', sans-serif;
+				text-align: center;
+				margin: 12px;
+				text-decoration: none
+			}
+			html, body {
+				margin: 0;
+				height: 100%
+			}
+			@keyframes loadingPage {
+				from{opacity: 0}
+				to{opacity: 1}
+			}
+			.centerbox {
+				animation-name: loadingPage;
+				animation-duration: 2s;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				}
+			.rowbox {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+			}
+			.maName {
+				font-size: 56px;
+				font-weight: bold;
+			}
+			.white {
+				color: white;
+			}
+			.grey {
+				color: grey;
+				font-weight: 100;
+				margin-top: 2px;
+				margin-bottom: 16px;
+			}
+			.eye {
+				fill:url(#linearGradient882);
+				fill-opacity:1;
+				stroke:#ffffff;
+				stroke-width:1.87933
+			}
+			.border {
+				fill-opacity:0;
+				stroke:#ffffff;
+				stroke-width:8.22163476;
+			}
+			.mounth {
+				fill:none;
+				stroke:#ffffff;
+				stroke-width:10.0192;
+				stroke-linecap:round;
+			}
+			svg {
+				width: 80px;
+				height: 80px;
+			}
+	</style>
+	<script>
+		let phrase = document.getElementById("phrase");
+		
+		phrase.innerHTML = phrase.innerHTML.replace("%year%", new Date().getFullYear())
+	</script>
+</html>
