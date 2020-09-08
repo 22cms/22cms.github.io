@@ -84,9 +84,9 @@
 				width: 80px;
 				height: 80px;
 			}
-			wallpaper-container {
+			.wallpaper-container {
 				display: flex;
-				flex-direction: column;
+				flex-direction: row;
 				align-items:center;
 				justify-content: center;
 				width: 100% 
@@ -103,6 +103,9 @@
 				border-radius: 0px 15px 15px 0px;
 			}
 			@media only screen and (max-width: 600px) {
+				.wallpaper-container {
+					flex-direction: column;
+				}
 				.wallpaper {
 					width: 300px; 
 					height: auto; 
