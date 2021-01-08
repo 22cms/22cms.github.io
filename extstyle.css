@@ -4,6 +4,9 @@ h6, h5, h4, h3, h2, h1, p {
 	margin: 12px;
 	text-decoration: none
 }
+body {
+	background-color: #292929;
+}
 html, body {
 	margin: 0;
 	height: 100%
@@ -111,3 +114,12 @@ html, body {
 		border-radius: 0px 0px 15px 15px;
 	}
 }
+
+@media (prefers-color-scheme: light) {
+      body {
+		  background-color: #F5F5F5;
+	  }
+	  .white {
+		  color: black;
+	  }
+    }
