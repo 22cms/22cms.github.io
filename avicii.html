@@ -1,31 +1,30 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>◢◤ - Francesco</title>
+		<link rel="icon" type="image/svg+xml" href="imgs/logonew.svg">
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/nothome.css">
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="extstyle.css">
-		<link rel="icon" href="imgs/favicon.png">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
-		<div class="centerbox" style="min-height: 100%">
-		<h1 class="maName white">◢◤ In Memory of Tim Bergling ◢◤</h1>
-		<h3 id="phrase" class="grey">Tim Berling, aka 'Avicii', made his last breath in 20th April 2018, but still now, in %year%, remains my favourite artist, thanks <3</h3>
-		<div class="wallpaper-container" style="margin: 13px">
-			<a href="imgs/stories.png"><img src="imgs/stories.png" class="wallpaper left"/></a>
-			<a href="imgs/storiesjap.png"><img src="imgs/storiesjap.png" class="wallpaper right"/></a>
-
+		<div class="centerbox">
+			<h1 class="title">◢◤ In Memory of Tim Bergling ◢◤</h1>
+			<h3 id="whereDate" class="description">Tim Berling, alias 'Avicii', made his last breath in 20th April 2018, but still now, in %currentYear%, remains my favourite artist. Thanks <3 </h3>
+			<div class="wallpapers-container">
+				<img class="wallpaper w-left" src="imgs/stories.png"/>
+				<img class="wallpaper w-right" src="imgs/storiesjap.png"/>
+			</div>
+			<h3 class="description" style="margin-top: 14px;">For those interested (probably none), here there are some wallpapers I made some time ago, they're just "Stories" and "Stories (Japan Tour Edition)" Album Arts readapted in 16:9 and in 6K/5K (PNG, ~16MB and 9MB), feel free to download them :)</h3>
+			
+			<div class="logos-container">
+				<img onclick="toggleDarkMode()" id="svg-logo" src="imgs/logonew.svg"></img>
+				<a href="https://22cms.github.io"><h1 class="title">Francesco</h1></a>
+			</div>
 		</div>
-		<h3 class="grey">For those interested (probably none), here there are some wallpapers I made some time ago, they're just "Stories" and "Stories (Japan Tour Edition)" Album Arts readapted in 16:9 and in 6K/5K (PNG, ~16MB and 9MB), feel free to download them :)</h3>
-			<a href="https://22cms.github.io" style="text-decoration:none"><div class="rowbox">
-				<svg id="francescoMini" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 210 297" height="478" width="478" class=""><defs id="defs2"><linearGradient gradientUnits="userSpaceOnUse" y2="60.617" x2="44.527" y1="87.37" x1="44.434" id="linearGradient1083" xlink:href="#linearGradient1081" gradientTransform="matrix(2.35168 0 0 2.34665 -44.33 -.202)"></linearGradient><linearGradient id="linearGradient1081"><stop id="stop1077" offset="0" style="stop-color:#fff;stop-opacity:1"></stop><stop id="stop1079" offset="1" style="stop-color:#fff;stop-opacity:0"></stop></linearGradient><linearGradient id="linearGradientyellow"><stop id="stop36" offset="0" style="stop-color:var(--second-color);stop-opacity:1"></stop><stop id="stop38" offset="1" style="stop-color:var(--second-color);stop-opacity:0"></stop></linearGradient><linearGradient xlink:href="#linearGradient1081" id="linearGradient882" gradientUnits="userSpaceOnUse" gradientTransform="matrix(2.34242 0 0 2.33741 251.941 .383)" x1="44.434" y1="87.37" x2="44.527" y2="60.617"></linearGradient><linearGradient xlink:href="#linearGradientyellow" id="linearGradient882Y" gradientUnits="userSpaceOnUse" gradientTransform="matrix(2.35168 0 0 2.34665 252.522 -.202)" x1="44.434" y1="87.37" x2="44.527" y2="60.617"></linearGradient></defs><g id="layer1"><circle r="144.405" cy="148.5" cx="105" id="border" class="border"></circle><path id="mounth" class="mounth" d="M46.047 100.706s23.761-22.194 58.773-22.521c33.644-.315 60.728 22.734 60.728 22.734"></path><ellipse ry="26.178" rx="16.355" cy="179.241" cx="60.919" id="eye1" class="eye"></ellipse><ellipse id="eye2" cx="148.255" cy="179.24" rx="16.355" ry="26.178" class="eye"></ellipse></g></svg>
-				<h1 class="maName white">Francesco</h1>
-			</div></a>
-		</div>
-	</body>
-	<script>
-		let phrase = document.getElementById("phrase");
 		
-		phrase.innerHTML = phrase.innerHTML.replace("%year%", new Date().getFullYear())
-	</script>
+		<script src="js/index.js"></script>
+		<script>document.getElementById("whereDate").innerText = document.getElementById("whereDate").innerText.replace("%currentYear%", new Date().getFullYear());</script>
+	</body>
 </html>

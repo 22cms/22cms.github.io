@@ -1,0 +1,157 @@
+/*@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('./roboto-v20-latin-regular.woff2') format('woff2'),
+       url('./roboto-v20-latin-regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+       url('./roboto-v20-latin-500.woff2') format('woff2'),
+       url('./roboto-v20-latin-500.woff') format('woff');
+}*/
+:root {
+	--second-color: #ffdd00;
+}
+
+html {
+	height: 100%;
+	width: 100%;
+}
+body { 
+	background-color: #292929;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	transition: background-color 0.5s;
+}
+.centerbox {
+	display:flex;
+	flex-direction: column;
+	min-height: 100%;
+	align-items: center;
+	justify-content: center;
+}
+.bgColor {
+	background-color: #292929;
+	fill: #292929;
+	transition: background-color 0.5s, fill 0.5s;
+}
+h1, h2, h3, h4, h5, h6, p, i, a {
+	font-family: Open Sans, sans-serif;
+	text-decoration: none;
+	transition: color 0.5s;
+	color: white;
+}
+.white-scheme {
+	background-color: #F5F5F5;
+}
+.white-scheme .bgColor {
+	background-color: #F5F5F5;
+	fill: #F5F5F5;
+}
+.white-scheme h1, h2, h3, h4, h5, h6, p, i, a {
+	color: black;
+}
+.white-scheme .icon {
+	fill: black;
+}
+
+.title {
+	font-size: 56px;
+	/*font-weight: 500;*/
+	margin: 8px;
+	text-align: center;
+	justify-content: center;
+}
+.description {
+	color: grey;
+	font-weight: 100;
+	margin-top: 2px;
+	margin: 12px;
+	margin-top: 8px;
+	margin-bottom: 16px;
+	text-align: center;
+}
+
+#jokescription {
+	color: grey;
+	margin: 0;
+    margin-top: 5px;
+    font-size: 10px;
+	height: 10px;
+}
+.oHidden {
+	opacity: 0;
+}
+#compensator {
+	height: 15px;
+}
+
+.logos-container {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+#svg-logo {
+	width: 270px;
+	height: 270px;
+	transition: transform 0.7s, opacity 0.7s;
+}
+.logo-oldstyle {
+	width: 270px;
+	height: 270px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	opacity: 0;
+	transition: transform 0.7s, opacity 0.7s;
+}
+
+.eye, #mounth {
+	fill: var(--second-color);
+	transition: fill 0.7s;
+}
+.border {
+	stroke: var(--second-color);
+	transition: stroke 0.7s;
+}
+
+.new-logo-hover {
+	opacity: 0;
+	transform: rotate(180deg);
+}
+.oldstyle-hover {
+	opacity: 1;
+	transform: rotate(180deg);
+}
+
+.icon-box {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 100%;
+	height: auto;
+}
+.icon-link {
+	width: 40px;
+	height: 40px;
+	margin: 6px;
+}
+.icon {
+	fill: white;
+	transition: fill 0.3s;
+	width: 40px;
+	height: auto;
+}
+
+.icon-link:hover .icon {
+	fill: var(--second-color);
+}
+
