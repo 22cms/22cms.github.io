@@ -12,6 +12,10 @@ var colorList = {
 		'phrase' : "Do you wanna spam me and get blocked? That's the right button!",
 		'color' : "#2CA5E0",
 	},
+	'homepage' : {
+		'phrase' : "My personal Browser Homepage, clearly not copied from Zorin's one",
+		'color' : "#1E6AFF",
+	},
 	'catMaker' : {
 		'phrase' : "Color Timmie as your Likes! Rigorously in Spaghetti Code",
 		'color' : "#D35757",
