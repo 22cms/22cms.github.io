@@ -17,7 +17,7 @@ var colorList = {
 		'color' : "#1E6AFF",
 	},
 	'catMaker' : {
-		'phrase' : "Color Timmie as your Likes! Rigorously in Spaghetti Code",
+		'phrase' : "Color Timmy as your Likes! Rigorously in Spaghetti Code",
 		'color' : "#D35757",
 	},
 	'avicii' : {
