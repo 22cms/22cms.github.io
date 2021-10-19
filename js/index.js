@@ -13,10 +13,12 @@ if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matc
 var iconClassList = document.getElementsByClassName("rollable")
 for (let i = 0; i < iconClassList.length; i++) {
 	iconClassList[i].addEventListener("mouseenter", function(e){ 
-		francescoRoll(e.originalTarget.attributes); 
+		var origElem = e.srcElement || e.originalTarget;
+		francescoRoll(origElem.attributes); 
 	});
 	iconClassList[i].addEventListener("touchstart", function(e){ 
-		francescoRoll(e.originalTarget.attributes); 
+		var origElem = e.srcElement || e.originalTarget;
+		francescoRoll(origElem.attributes); 
 	});
 	iconClassList[i].addEventListener("mouseleave", function(){ 
 		francescoUnroll(); 
