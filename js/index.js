@@ -17,7 +17,7 @@ for (let i = 0; i < iconClassList.length; i++) {
 		francescoRoll(origElem.attributes); 
 	});
 	iconClassList[i].addEventListener("touchstart", function(e){ 
-		var origElem = e.srcElement || e.originalTarget;
+		var origElem = (e.srcElement.farthestViewportElement) ? e.srcElement.farthestViewportElement.parentElement : e.srcElement.parentElement || e.originalTarget.parentElement;
 		francescoRoll(origElem.attributes); 
 	});
 	iconClassList[i].addEventListener("mouseleave", function(){ 
